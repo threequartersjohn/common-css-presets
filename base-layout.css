@@ -1,0 +1,24 @@
+/*
+    A base layout utility class. Implements the following:
+    +------------------------------------------+
+    | padding | maximum content width | padding|
+    +------------------------------------------+
+
+    A grid layout allows for straightforward spacing calculation,
+    as well as making it easy to add full width children by setting
+    their grid spans.
+ */
+
+:root {
+    /* Example values */
+    --edge-padding: 1rem;
+    --max-layout-width: 1280px;
+}
+
+.base-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(var(--edge-padding), 1fr)
+        min(var(--max-layout-width), calc(100% - 2 * var(--edge-padding)))
+        minmax(var(--edge-padding), 1fr)
+}

@@ -1,4 +1,4 @@
-# Common use CSS Presets
+# Common CSS Presets
 
 ## What is this?
 This is just a repository for useful CSS things that i use in multiple projects.
